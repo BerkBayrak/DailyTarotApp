@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const messageDiv = document.getElementById("message");
   const meaningDiv = document.getElementById("meaning");
 
-  // Başlangıçta kart adı, mesaj ve anlamı gizle
+
   cardNameDiv.style.display = "none";
   messageDiv.style.display = "none";
   meaningDiv.style.display = "none";
@@ -113,7 +113,6 @@ document.addEventListener("DOMContentLoaded", () => {
       currentCard = getRandomCard();
       cardImg.src = currentCard.image;
 
-      // Kart açıldığında kart adı, mesaj ve anlamı göster
       cardNameDiv.textContent = currentCard.name;
       cardNameDiv.style.display = "block";
 
@@ -127,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       cardImg.src = "images/cards/back.png";
 
-      // Kart kapalıyken kart adı, mesaj ve anlamı gizle
+
       cardNameDiv.style.display = "none";
       messageDiv.style.display = "none";
       meaningDiv.style.display = "none";
@@ -136,4 +135,5 @@ document.addEventListener("DOMContentLoaded", () => {
       cardOpen = false;
     }
   });
+
 });
